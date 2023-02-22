@@ -4,7 +4,7 @@ alsactl configuration (state) files for the Pi-CodecZero sound card
 
 ## Usage
 
-To load a state file, from the command line use:  
+To load a state file, from the command line use:
 
 sudo alsactl restore -f filename.state
 
