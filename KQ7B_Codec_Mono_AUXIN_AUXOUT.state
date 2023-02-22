@@ -1,4 +1,8 @@
+# Where possible and appropriate, commentary refers to the DA7212 register definitions.
+# Many if not all commentary arises from document inspection rather than code inspection or experiment.
+# Please report (conr2286 a@t gmail.com) or better yet correct errors!  ;)
 state.IQaudIOCODEC {
+# DA7212 MIC_1_AMP_GAIN
 	control.1 {
 		iface MIXER
 		name 'Mic 1 Volume'
@@ -13,6 +17,7 @@ state.IQaudIOCODEC {
 			dbvalue.0 -600
 		}
 	}
+ # DA7212 MIC_2_AMP_GAIN
 	control.2 {
 		iface MIXER
 		name 'Mic 2 Volume'
@@ -27,6 +32,7 @@ state.IQaudIOCODEC {
 			dbvalue.0 -600
 		}
 	}
+ # DA7212 AUX_L_AMP_GAIN and AUX_R_GAIN
 	control.3 {
 		iface MIXER
 		name 'Aux Volume'
@@ -43,6 +49,7 @@ state.IQaudIOCODEC {
 			dbvalue.1 0
 		}
 	}
+ #
 	control.4 {
 		iface MIXER
 		name 'Mixin PGA Volume'
@@ -59,6 +66,7 @@ state.IQaudIOCODEC {
 			dbvalue.1 600
 		}
 	}
+ # DA7212 ADC_L_DIGITAL_GAIN and ADC_R_DIGITAL_GAIN
 	control.5 {
 		iface MIXER
 		name 'ADC Volume'
@@ -75,6 +83,7 @@ state.IQaudIOCODEC {
 			dbvalue.1 0
 		}
 	}
+ # DA7212 DAC_L_DIGITAL_GAIN and DAC_R_DIGITAL_GAIN
 	control.6 {
 		iface MIXER
 		name 'DAC Volume'
@@ -91,6 +100,7 @@ state.IQaudIOCODEC {
 			dbvalue.1 0
 		}
 	}
+ # DA7212 HP_L_AMP_GAIN and HP_R_AMP_GAIN
 	control.7 {
 		iface MIXER
 		name 'Headphone Volume'
@@ -107,6 +117,7 @@ state.IQaudIOCODEC {
 			dbvalue.1 -5700
 		}
 	}
+ # DA7212 LINE_AMP_GAIN
 	control.8 {
 		iface MIXER
 		name 'Lineout Volume'
@@ -121,6 +132,7 @@ state.IQaudIOCODEC {
 			dbvalue.0 -4800
 		}
 	}
+ #
 	control.9 {
 		iface MIXER
 		name 'DAC EQ Switch'
@@ -131,6 +143,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ #
 	control.10 {
 		iface MIXER
 		name 'DAC EQ1 Volume'
@@ -145,6 +158,7 @@ state.IQaudIOCODEC {
 			dbvalue.0 -1050
 		}
 	}
+ #
 	control.11 {
 		iface MIXER
 		name 'DAC EQ2 Volume'
@@ -159,6 +173,7 @@ state.IQaudIOCODEC {
 			dbvalue.0 -1050
 		}
 	}
+ #
 	control.12 {
 		iface MIXER
 		name 'DAC EQ3 Volume'
@@ -173,6 +188,7 @@ state.IQaudIOCODEC {
 			dbvalue.0 -1050
 		}
 	}
+ #
 	control.13 {
 		iface MIXER
 		name 'DAC EQ4 Volume'
@@ -187,6 +203,7 @@ state.IQaudIOCODEC {
 			dbvalue.0 -1050
 		}
 	}
+ #
 	control.14 {
 		iface MIXER
 		name 'DAC EQ5 Volume'
@@ -201,6 +218,7 @@ state.IQaudIOCODEC {
 			dbvalue.0 -1050
 		}
 	}
+ #
 	control.15 {
 		iface MIXER
 		name 'ADC HPF Switch'
@@ -211,6 +229,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ #
 	control.16 {
 		iface MIXER
 		name 'ADC HPF Cutoff'
@@ -225,6 +244,7 @@ state.IQaudIOCODEC {
 			item.3 Fs/3000
 		}
 	}
+ #
 	control.17 {
 		iface MIXER
 		name 'ADC Voice Mode Switch'
@@ -235,6 +255,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ #
 	control.18 {
 		iface MIXER
 		name 'ADC Voice Cutoff'
@@ -253,6 +274,7 @@ state.IQaudIOCODEC {
 			item.7 '400Hz'
 		}
 	}
+ #
 	control.19 {
 		iface MIXER
 		name 'DAC HPF Switch'
@@ -263,6 +285,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ #
 	control.20 {
 		iface MIXER
 		name 'DAC HPF Cutoff'
@@ -277,6 +300,7 @@ state.IQaudIOCODEC {
 			item.3 Fs/3000
 		}
 	}
+ #
 	control.21 {
 		iface MIXER
 		name 'DAC Voice Mode Switch'
@@ -287,6 +311,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ #
 	control.22 {
 		iface MIXER
 		name 'DAC Voice Cutoff'
@@ -305,6 +330,7 @@ state.IQaudIOCODEC {
 			item.7 '400Hz'
 		}
 	}
+ # DA7212 MIC1_SEL???
 	control.23 {
 		iface MIXER
 		name 'Mic 1 Switch'
@@ -315,6 +341,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ # DA7212 MIC2_SEL???
 	control.24 {
 		iface MIXER
 		name 'Mic 2 Switch'
@@ -325,6 +352,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ # DA7212 AUX_L_SEL and AUX_R_SEL???
 	control.25 {
 		iface MIXER
 		name 'Aux Switch'
@@ -336,6 +364,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ #
 	control.26 {
 		iface MIXER
 		name 'Mixin PGA Switch'
@@ -347,6 +376,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ # DA7212 ADC_L)EN and ADC_R_EN???
 	control.27 {
 		iface MIXER
 		name 'ADC Switch'
@@ -358,6 +388,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ # DA7212 HP_L_AMP_? and HP_R_AMP_?
 	control.28 {
 		iface MIXER
 		name 'Headphone Switch'
@@ -369,6 +400,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ # DA7212 LINE_AMP_?
 	control.29 {
 		iface MIXER
 		name 'Lineout Switch'
@@ -379,6 +411,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ #
 	control.30 {
 		iface MIXER
 		name 'DAC Soft Mute Switch'
@@ -389,6 +422,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ #
 	control.31 {
 		iface MIXER
 		name 'DAC Soft Mute Rate'
@@ -406,6 +440,7 @@ state.IQaudIOCODEC {
 			item.6 '64'
 		}
 	}
+ #
 	control.32 {
 		iface MIXER
 		name 'Aux ZC Switch'
@@ -417,6 +452,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ #
 	control.33 {
 		iface MIXER
 		name 'Mixin PGA ZC Switch'
@@ -428,6 +464,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ #
 	control.34 {
 		iface MIXER
 		name 'Headphone ZC Switch'
@@ -439,6 +476,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ #
 	control.35 {
 		iface MIXER
 		name 'Aux Gain Ramping Switch'
@@ -450,6 +488,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ #
 	control.36 {
 		iface MIXER
 		name 'Mixin Gain Ramping Switch'
@@ -461,6 +500,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ #
 	control.37 {
 		iface MIXER
 		name 'ADC Gain Ramping Switch'
@@ -472,6 +512,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ #
 	control.38 {
 		iface MIXER
 		name 'DAC Gain Ramping Switch'
@@ -483,6 +524,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ #
 	control.39 {
 		iface MIXER
 		name 'Headphone Gain Ramping Switch'
@@ -494,6 +536,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ #
 	control.40 {
 		iface MIXER
 		name 'Lineout Gain Ramping Switch'
@@ -504,6 +547,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ #
 	control.41 {
 		iface MIXER
 		name 'Gain Ramping Rate'
@@ -518,6 +562,7 @@ state.IQaudIOCODEC {
 			item.3 'nominal rate / 32'
 		}
 	}
+ #
 	control.42 {
 		iface MIXER
 		name 'DAC NG Switch'
@@ -528,6 +573,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ #
 	control.43 {
 		iface MIXER
 		name 'DAC NG Setup Time'
@@ -542,6 +588,7 @@ state.IQaudIOCODEC {
 			item.3 '2048 samples'
 		}
 	}
+ #
 	control.44 {
 		iface MIXER
 		name 'DAC NG Rampup Rate'
@@ -554,6 +601,7 @@ state.IQaudIOCODEC {
 			item.1 '0.16 ms/dB'
 		}
 	}
+ #
 	control.45 {
 		iface MIXER
 		name 'DAC NG Rampdown Rate'
@@ -566,6 +614,7 @@ state.IQaudIOCODEC {
 			item.1 '20.48 ms/dB'
 		}
 	}
+ #
 	control.46 {
 		iface MIXER
 		name 'DAC NG OFF Threshold'
@@ -577,6 +626,7 @@ state.IQaudIOCODEC {
 			range '0 - 7'
 		}
 	}
+ #
 	control.47 {
 		iface MIXER
 		name 'DAC NG ON Threshold'
@@ -588,6 +638,7 @@ state.IQaudIOCODEC {
 			range '0 - 7'
 		}
 	}
+ # DA7212 DAC_L_MONO and DAC_R_MONO
 	control.48 {
 		iface MIXER
 		name 'DAC Mono Switch'
@@ -599,6 +650,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ #
 	control.49 {
 		iface MIXER
 		name 'DAC Invert Switch'
@@ -610,6 +662,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ #
 	control.50 {
 		iface MIXER
 		name 'DMIC Switch'
@@ -621,6 +674,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ #
 	control.51 {
 		iface MIXER
 		name 'ALC Switch'
@@ -632,6 +686,7 @@ state.IQaudIOCODEC {
 			count 2
 		}
 	}
+ #
 	control.52 {
 		iface MIXER
 		name 'ALC Attack Rate'
@@ -655,6 +710,7 @@ state.IQaudIOCODEC {
 			item.12 '180224/fs'
 		}
 	}
+ #
 	control.53 {
 		iface MIXER
 		name 'ALC Release Rate'
@@ -676,6 +732,7 @@ state.IQaudIOCODEC {
 			item.10 '180224/fs'
 		}
 	}
+ #
 	control.54 {
 		iface MIXER
 		name 'ALC Hold Time'
@@ -702,6 +759,7 @@ state.IQaudIOCODEC {
 			item.15 '2031616/fs'
 		}
 	}
+ #
 	control.55 {
 		iface MIXER
 		name 'ALC Integ Attack Rate'
@@ -716,6 +774,7 @@ state.IQaudIOCODEC {
 			item.3 '1/65536'
 		}
 	}
+ #
 	control.56 {
 		iface MIXER
 		name 'ALC Integ Release Rate'
@@ -730,6 +789,7 @@ state.IQaudIOCODEC {
 			item.3 '1/65536'
 		}
 	}
+ #
 	control.57 {
 		iface MIXER
 		name 'ALC Noise Threshold Volume'
@@ -744,6 +804,7 @@ state.IQaudIOCODEC {
 			dbvalue.0 -9450
 		}
 	}
+ #
 	control.58 {
 		iface MIXER
 		name 'ALC Min Threshold Volume'
@@ -758,6 +819,7 @@ state.IQaudIOCODEC {
 			dbvalue.0 -9450
 		}
 	}
+ #
 	control.59 {
 		iface MIXER
 		name 'ALC Max Threshold Volume'
@@ -772,6 +834,7 @@ state.IQaudIOCODEC {
 			dbvalue.0 -9450
 		}
 	}
+ #
 	control.60 {
 		iface MIXER
 		name 'ALC Max Attenuation Volume'
@@ -786,6 +849,7 @@ state.IQaudIOCODEC {
 			dbvalue.0 0
 		}
 	}
+ #
 	control.61 {
 		iface MIXER
 		name 'ALC Max Gain Volume'
@@ -800,6 +864,7 @@ state.IQaudIOCODEC {
 			dbvalue.0 0
 		}
 	}
+ #
 	control.62 {
 		iface MIXER
 		name 'ALC Min Analog Gain Volume'
@@ -814,6 +879,7 @@ state.IQaudIOCODEC {
 			dbvalue.0 -9999999
 		}
 	}
+ #
 	control.63 {
 		iface MIXER
 		name 'ALC Max Analog Gain Volume'
@@ -828,6 +894,7 @@ state.IQaudIOCODEC {
 			dbvalue.0 -9999999
 		}
 	}
+ #
 	control.64 {
 		iface MIXER
 		name 'ALC Anticlip Mode Switch'
@@ -838,6 +905,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ #
 	control.65 {
 		iface MIXER
 		name 'ALC Anticlip Level'
@@ -849,6 +917,7 @@ state.IQaudIOCODEC {
 			range '0 - 127'
 		}
 	}
+ #
 	control.66 {
 		iface MIXER
 		name 'HP Jack Switch'
@@ -859,6 +928,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ #
 	control.67 {
 		iface MIXER
 		name 'MIC Jack Switch'
@@ -869,6 +939,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ #
 	control.68 {
 		iface MIXER
 		name 'Onboard MIC Switch'
@@ -879,6 +950,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ #
 	control.69 {
 		iface MIXER
 		name 'AUX Jack Switch'
@@ -889,6 +961,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ # DA7212 MIC_1_AMP_IN_SEL???
 	control.70 {
 		iface MIXER
 		name 'Mic 1 Amp Source MUX'
@@ -902,6 +975,7 @@ state.IQaudIOCODEC {
 			item.2 MIC_N
 		}
 	}
+ # DA7212 MIC_2_AMP_IN_SEL???
 	control.71 {
 		iface MIXER
 		name 'Mic 2 Amp Source MUX'
@@ -915,6 +989,7 @@ state.IQaudIOCODEC {
 			item.2 MIC_N
 		}
 	}
+ # DA7212 MIXIN_L_SELECT:AUX_L_SEL
 	control.72 {
 		iface MIXER
 		name 'Mixin Left Aux Left Switch'
@@ -925,6 +1000,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+  # DA7212 MIXIN_L_SELECT:MIC1_SEL
 	control.73 {
 		iface MIXER
 		name 'Mixin Left Mic 1 Switch'
@@ -935,6 +1011,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ # DA7212 MIXIN_L_SELECT:MIC2_SEL
 	control.74 {
 		iface MIXER
 		name 'Mixin Left Mic 2 Switch'
@@ -945,6 +1022,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ # DA7212 ???
 	control.75 {
 		iface MIXER
 		name 'Mixin Left Mixin Right Switch'
@@ -955,6 +1033,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ # DA7212 MIXIN_R_SELECT:AUX_R_SEL
 	control.76 {
 		iface MIXER
 		name 'Mixin Right Aux Right Switch'
@@ -965,6 +1044,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ # DA7212 MIXIN_R_SELECT:MIC2_SEL
 	control.77 {
 		iface MIXER
 		name 'Mixin Right Mic 2 Switch'
@@ -975,6 +1055,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ # DA7212 MIXIN_R_SELECT:MIC1_SEL
 	control.78 {
 		iface MIXER
 		name 'Mixin Right Mic 1 Switch'
@@ -985,6 +1066,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ # ???
 	control.79 {
 		iface MIXER
 		name 'Mixin Right Mixin Left Switch'
@@ -995,6 +1077,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ #
 	control.80 {
 		iface MIXER
 		name 'DAI Left Source MUX'
@@ -1009,6 +1092,7 @@ state.IQaudIOCODEC {
 			item.3 'DAI Input Right'
 		}
 	}
+ #
 	control.81 {
 		iface MIXER
 		name 'DAI Right Source MUX'
@@ -1023,6 +1107,7 @@ state.IQaudIOCODEC {
 			item.3 'DAI Input Right'
 		}
 	}
+ #
 	control.82 {
 		iface MIXER
 		name 'DAC Left Source MUX'
@@ -1037,6 +1122,7 @@ state.IQaudIOCODEC {
 			item.3 'DAI Input Right'
 		}
 	}
+ #
 	control.83 {
 		iface MIXER
 		name 'DAC Right Source MUX'
@@ -1051,6 +1137,7 @@ state.IQaudIOCODEC {
 			item.3 'DAI Input Right'
 		}
 	}
+ # DA7212 MIXOUT_L_SELECT:AUX_L
 	control.84 {
 		iface MIXER
 		name 'Mixout Left Aux Left Switch'
@@ -1061,6 +1148,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ # DA7212 MIXOUT_L_SELECT:MIXIN_L
 	control.85 {
 		iface MIXER
 		name 'Mixout Left Mixin Left Switch'
@@ -1071,6 +1159,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ # DA7212 MIXOUT_L_SELECT:MIXIN_R
 	control.86 {
 		iface MIXER
 		name 'Mixout Left Mixin Right Switch'
@@ -1081,6 +1170,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ # DA7212 MIXOUT_L_SELECT:DAC_L
 	control.87 {
 		iface MIXER
 		name 'Mixout Left DAC Left Switch'
@@ -1091,6 +1181,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+# DA7212 MIXOUT_L_SELECT:AUX_L_INV
 	control.88 {
 		iface MIXER
 		name 'Mixout Left Aux Left Invert Switch'
@@ -1101,6 +1192,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+# DA7212 MIXOUT_L_SELECT:MIXIN_L_INV
 	control.89 {
 		iface MIXER
 		name 'Mixout Left Mixin Left Invert Switch'
@@ -1111,6 +1203,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+# DA7212 MIXOUT_L_SELECT:MIXIN_R_INV
 	control.90 {
 		iface MIXER
 		name 'Mixout Left Mixin Right Invert Switch'
@@ -1121,6 +1214,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ # DA7212 MIXOUT_R_SELECT:AUX_R
 	control.91 {
 		iface MIXER
 		name 'Mixout Right Aux Right Switch'
@@ -1131,6 +1225,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+# DA7212 MIXOUT_R_SELECT:MIXIN_R
 	control.92 {
 		iface MIXER
 		name 'Mixout Right Mixin Right Switch'
@@ -1141,6 +1236,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+# DA7212 MIXOUT_R_SELECT:MIXIN_L
 	control.93 {
 		iface MIXER
 		name 'Mixout Right Mixin Left Switch'
@@ -1151,6 +1247,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+# DA7212 MIXOUT_R_SELECT:DAC_R
 	control.94 {
 		iface MIXER
 		name 'Mixout Right DAC Right Switch'
@@ -1161,6 +1258,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+# DA7212 MIXOUT_R_SELECT:AUX_R_INV
 	control.95 {
 		iface MIXER
 		name 'Mixout Right Aux Right Invert Switch'
@@ -1171,6 +1269,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+ # DA7212 MIXOUT_R_SELECT:MIXIN_R_INV
 	control.96 {
 		iface MIXER
 		name 'Mixout Right Mixin Right Invert Switch'
@@ -1181,6 +1280,7 @@ state.IQaudIOCODEC {
 			count 1
 		}
 	}
+# DA7212 MIXOUT_R_SELECT:MIXIN_L_INV
 	control.97 {
 		iface MIXER
 		name 'Mixout Right Mixin Left Invert Switch'
