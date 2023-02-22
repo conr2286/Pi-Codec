@@ -22,6 +22,7 @@ sudo alsactl restore -f filename.state
 ## Status
 Feb 20, 2023 Forked from https://github.com/iqaudio/Pi-Codec   
 Feb 21, 2023 Under development (attempting to document the many controls in new/modified state files)  
+Feb 21, 2023 KQ7B_Codec_Mono_AUXIN_AUXOUT.state is ready for testing  
 
 ## Attribution for changes/additions on this fork
 * KQ7B (Jim Conrad), conr2286 AT gmail.com  
