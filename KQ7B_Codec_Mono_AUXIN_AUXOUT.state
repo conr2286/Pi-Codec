@@ -1,6 +1,32 @@
-# Where possible and appropriate, commentary refers to the DA7212 register definitions.
-# Many if not all commentary arises from document inspection rather than code inspection or experiment.
-# Please report (conr2286 a@t gmail.com) or better yet correct errors!  ;)
+#-------------------------------------------------------------------------------------------------------
+#
+# NAME
+#   KQ7B_Codec_Mono_AUXIN_AUXOUT.state -- IQaudIO Zero Codec config for mono AUXIN/AUXOUT signal path
+#
+# SYNOPSIS
+#   sudo alsctl restore -f KQ7B_Codec_Mono_AUXIN_AUXOUT.state
+#
+# DESCRIPTION
+#   This alsa config file sets up two monoaural signal paths, one for input and another for output,
+#   through the IQaudIO Zero's DAS7212 Codec.
+#
+#   The input signal path begins at either AUX_L or AUX_R pin, passes through the respective AUX amps,
+#   after which both the left and right signals are combined in both the MIXIN_L and MIXIN_R before
+#   the two ADC channels.  Thus, either the left or right channel can be used for mono input.
+#
+#   Likewise, the output signal path begins in either the left or the right DAC channel, before the
+#   two are combined in both MIXOUT_L and MIXOUT_R.  The mono output signal is available from either
+#   HP_L or HP_R.  The LINE_AMP is disabled.
+#
+# NOTES
+#   Where possible and appropriate, the control commentaries refer to the DA7212 register definitions.
+#   Caution:  Many if not all commentary arises from document inspection rather than code inspection
+#   or experiment --- there are likely misunderstandings.  Please report or better yet correct errors!
+#
+# ATTRIBUTION
+#   This derivative work of IQaudIO's state files created by KQ7B, conr2286 AT gmail.com
+#
+#-------------------------------------------------------------------------------------------------------
 state.IQaudIOCODEC {
 # DA7212 MIC_1_AMP_GAIN
 	control.1 {
