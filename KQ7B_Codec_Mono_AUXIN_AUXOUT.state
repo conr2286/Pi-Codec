@@ -4,11 +4,12 @@
 #   KQ7B_Codec_Mono_AUXIN_AUXOUT.state -- IQaudIO Zero Codec config for mono AUXIN/AUXOUT signal path
 #
 # SYNOPSIS
-#   sudo alsctl restore -f KQ7B_Codec_Mono_AUXIN_AUXOUT.state
+#   sudo alsactl restore -f KQ7B_Codec_Mono_AUXIN_AUXOUT.state
 #
 # DESCRIPTION
 #   This alsa config file sets up two monoaural signal paths, one for input and another for output,
-#   through the IQaudIO Zero's DAS7212 Codec.
+#   through the IQaudIO Zero's DAS7212 Codec.  The goal of this configuration is to use the IQaudIO
+#   Zero with wsjt-x.
 #
 #   The input signal path begins at either AUX_L or AUX_R pin, passes through the respective AUX amps,
 #   after which both the left and right signals are combined in both the MIXIN_L and MIXIN_R before
