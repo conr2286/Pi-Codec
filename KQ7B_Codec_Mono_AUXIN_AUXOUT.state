@@ -23,8 +23,12 @@
 #   Caution:  Many if not all commentary arises from document inspection rather than code inspection
 #   or experiment --- there are likely misunderstandings.  Please report or better yet correct errors!
 #
+# REFERENCES
+#   https://www.renesas.com/us/en/document/dst/da7212-datasheet
+#   https://github.com/iqaudio/Pi-Codec
+#
 # ATTRIBUTION
-#   This derivative work of IQaudIO's state files created by KQ7B, conr2286 AT gmail.com
+#   This derivative work of IQaudIO's state files was created by KQ7B, conr2286 AT gmail.com
 #
 #-------------------------------------------------------------------------------------------------------
 state.IQaudIOCODEC {
